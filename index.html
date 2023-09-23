@@ -1,85 +1,130 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title></title>
-    </head>
-     <!--  Header section coded using CSS flex -->
-    <header>
-        <div class="logo">
-            <img src="images/personal-logo.png">
-        </div>
-        <nav class="navbar">
-                <a href="https://drewhart.github.io/UX_UI_HW_20/">
-                    <img src="images/button-kidventures.png">
-                </a>
-                <img src="images/button-perpal.png">
-                <img src="images/button-ndlb.png">
-                <img src="images/button-resume.png">
-                <a href="#footer-contact">
-                    <img src="images/button-contact.png">
-                </a>
-        </nav>
-    </header>
-    <body>
-         <!--  heroImg section coded using CSS grid -->
-        <section class="heroImg">
-            <div class="hero">
-                <img src="images/portfolio-portrait.png">
-            </div>
-            <div class="name"><h1 class="name-twolines">Drew<br>Hartfield</h1><h1 class="name-oneline">Drew Hartfield</h1></div>
-            <div class="designer"><h3>UX/UI Designer</h3></div>
-        </section>
-         <!--  aboutme section coded using CSS grid -->
-        <section class="aboutme">
-            <div class="background">
-                <p>Drew Hartfield (he/him) is a UX/UI Designer with a background in Psychology and Behavioral Health, enabling him to connect with users and improve their experience through design. His experience in research gives him an edge when discovering user needs and developing empathy.</p>
-            </div>
-            <div class="skills">
-                <img src="images/icon-skills.png">
-                <p>His skills include user research, user interviews, storyboards, and prototype testing.</p>
-            </div>
-            <div class="programs">
-                <p>He brings value to the team with knowledge of Miro, InVision, Figma, G-Suite, Slack, Trello, and Zoom.</p>
-                <img src="images/icon-programs.png">
-            </div>
-        </section>
-         <!--  greatesthits section coded using CSS grid -->
-        <section class="greatesthits">
-            <div class="ghtitle">
-                <h2>Greatest Hits</h2>
-            </div>
-            <div class="kidventures">
-                <img src="images/logo-KidVentures.png">
-                <h3>KidVentures: The solution for parents traveling with young children. Simplify your travels, minimize stress, and maximize your family’s joy!</h3>
-            </div>
-            <div class="perpal">
-                <img src="images/logo-perpal.png">
-                <h3>Have you ever wanted to send your favorite uncle a clown for his birthday? While now you can with PerformaPalooza, the app which connects you with entertainers in your area.</h3>
-            </div>
-            <div class="ndlb">
-                <img src="images/logo-NDLB.png">
-                <h3>No Dog Left Behind is an organization dedicated to the finding forever families for dogs and protect and advocate for abused, neglected, and abandoned dogs.</h3>
-            </div>
-        </section>
-        <section class="thankyou">
-            <h2 class="tydesktop">thanks for taking a look</h2>
-            <h2 class="tymobile">thank you</h2>
-        </section>
-         <!--  getintouch section coded using CSS flex -->
-        <footer id="footer-contact">
-            <section class="getintouch">
-                <div class="socials"><img src="images/logo-linkedin.png">
-                <img src="images/logo-behance.png"></div>
-                <h2>Get In Touch</h2>
-                <div class="contact">
-                    <h3>drewhartfield7@gmail.com<br>
-                        (507) 338-5348</h3></div>
-            </section>
-            <p class="copyright">Copyright 2023</p>
-        </footer>
 
-    </body>
-    <script src="js/index.js"></script>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<header>
+    <nav class="navbar fixed-top">
+        <div class="navlogo">
+            <a href="index.html"><img src="images/personal-logo.png" class="img-fluid" alt="..."></a>
+        </div>
+        <div class="navbuttons">
+            <a href="timetamer.html"><img src="images/button-kidventures.png" class="img-fluid" alt="..."></a>
+            <a href="perpal.html"><img src="images/button-perpal.png" class="img-fluid" alt="..."></a>
+            <a href="ndlb.html"><img src="images/button-ndlb.png" class="img-fluid" alt="..."></a>
+            <a href="#"><img src="images/button-resume.png" class="img-fluid" alt="..."></a>
+            <a href="#footer-contact"><img src="images/button-contact.png" class="img-fluid" alt="..."></a>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="container-fluid title">
+        <div class="row align-items-center">
+            <div class="col g-1">
+                <img src="images/portfolio-portrait.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col gy-2">
+                <h1>Drew Hartfield</h1>
+                <h4>UX/UI Designer</h4>
+            </div>
+        </div>
+    </div>
+    <div class="card container inviscard">
+        <div class="row align-items-center">
+            <div class="col">
+                <p>I am Drew Hartfield (he/him), a UX/UI Designer with a background in Psychology and Behavioral Health,
+                    enabling me to connect with users and improve their experience through design. My expertise in
+                    research and interviewing gives me an advantage in discovering user needs and developing empathy.
+                </p>
+            </div>
+            <div class="col">
+                <img src="images/icon-skills.png" class="img-fluid" alt="...">
+                <p>My skills include user research, user interviews, storyboards, and prototype testing.</p>
+            </div>
+            <div class="col">
+                <p>I bring value to the team with knowledge of Miro, InVision, Figma, G-Suite, Slack, Trello, and Zoom.
+                </p>
+                <img src="images/icon-programs.png" class="img-fluid" alt="...">
+            </div>
+        </div>
+    </div>
+    <div class="card container title">
+        <h2>Greatest Hits</h2>
+    </div>
+    <div class="container-fluid inviscard">
+        <div class="row">
+            <div class="col">
+                <a href="timetamer.html">
+                    <div class="card bluecard-sm h-100">
+                        <div class="card-body">
+                            <img src="images/logo-KidVentures.png" class="img-fluid" alt="...">
+                            <h4>KidVentures: The solution for parents traveling with young children. Simplify your
+                                travels,
+                                minimize stress, and maximize your family’s joy!</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="perpal.html">
+                    <div class="card bluecard-sm h-100">
+                        <div class="card-body">
+                            <img src="images/logo-perpal.png" class="img-fluid" alt="...">
+                            <h4>Have you ever wanted to send your favorite uncle a clown for his birthday? While now you
+                                can
+                                with PerformaPalooza, the app which connects you with entertainers in your area.
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="ndlb.html">
+                    <div class="card bluecard-sm h-100">
+                        <div class="card-body">
+                            <img src="images/logo-NDLB.png" class="img-fluid" alt="...">
+                            <h4>No Dog Left Behind is an organization dedicated to the finding forever families for dogs
+                                and
+                                protect and advocate for abused, neglected, and abandoned dogs.  
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="card container title">
+        <h2>thanks for taking a look</h2>
+    </div>
+</body>
+
+<footer id="footer-contact">
+    <div class="card container footercard">
+        <div class="row align-items-center">
+            <div class="col">
+                <a href="https://www.linkedin.com/in/drewhartfield/">
+                    <img src="images/logo-linkedin.png" class="img-fluid" alt="LinkedIn">
+                </a>
+                <a href="https://www.behance.net/drewhartfield/projects">
+                    <img src="images/logo-behance.png" class="img-fluid" alt="Behance">
+                </a>
+            </div>
+            <div class="col-md-auto">
+                <h2>GET IN TOUCH</h2>
+            </div>
+            <div class="col">
+                <h4>drewhartfield7@gmail.com</h4>
+                <h4>(507) 338-5348</h4>
+            </div>
+        </div>
+    </div>
+    <p class="copyright">Copyright 2023</p>
+</footer>
+
 </html>

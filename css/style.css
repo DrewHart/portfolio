@@ -2,89 +2,74 @@
 @font-face {
     font-family: 'disgusting_behaviorregular';
     src: url('../fonts/disgb___-webfont.woff2') format('woff2'),
-         url('../fonts/disgb___-webfont.woff') format('woff');
+        url('../fonts/disgb___-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
+
 h1 {
-    color:#AF3B6E;
+    color: #AF3B6E;
+    font: normal clamp(3.25rem, 1.2083rem + 9.0741vw, 9.375rem) 'disgusting_behaviorregular';
+    line-height: 100%;
+}
+
+h2 {
+    color: #AF3B6E;
     font: normal clamp(2.75rem, 2.3333rem + 1.8519vw, 4rem) 'disgusting_behaviorregular';
 }
-h2 {
+
+h3 {
     font: normal 300 clamp(1em, 2vw, 2.5em) "Merriweather Sans", sans-serif;
 }
-h3 {
+
+h4 {
     font: normal 300 clamp(14px, 1.5vw, 20px) "Merriweather Sans", sans-serif;
 }
+
 p {
     font: normal 400 clamp(12px, 1.5vw, 16px) "Merriweather Sans", sans-serif;
 }
+
 /*Navigation Bar*/
-header {
-    display: flex;
-    background-color: #949ABF;
-    position: fixed;
-    max-width: 66.25%;
-    width: 100%;
-    height: 80px;
-    min-height: 80px;
-    left: 16.875%;
-    right: 16.875%;
-    top: 0px;
-    align-items: center;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 14px;
-    z-index: 1;
-    padding-left: 4px;
-}
-
-.logo {
-    display: flex;
-    object-fit: contain;
-    max-width: 100%;
-    min-width: 0;
-    flex-grow: 1;
-    justify-self: left;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.logo img {
-    transition: 1s;
-    max-width: 100%;
-    width: 72px;
-    height: 72px;
-    display: inline-block;
-}
-
-.logo img:hover {
-    transform: rotate(360deg);
-}
-
 .navbar {
     display: flex;
     flex-direction: row;
-    flex-grow: 2;
-    max-width: 100%;
-    min-width: 0;
-    gap: 16px;
-    justify-content: center;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+    background-color: #949ABF;
+    max-width: 66.25%;
+    margin: auto;
+    top: 0px;
 
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 14px;
+    z-index: 1;
+    padding-left: 1%;
+    justify-content: center;
+}
 .navbar img {
     transition: 1s;
-    max-width: 100%;
-    width: 72px;
-    height: 72px;
-    display: block;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .navbar img:hover {
     transform: rotate(360deg);
+}
+.navlogo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: left;
+}
+.navbuttons {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1%;
 }
 
 /*Start of main page*/
@@ -103,6 +88,9 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
 }
+.title h4 {
+    color: #AF3B6E;
+}
 
 /*Information Cards*/
 .bluecard {
@@ -115,17 +103,24 @@ body {
     border-radius: 14px;
 }
 
-.processimages {
+.inviscard {
     width: 66.25%;
     margin: 1% auto 1% auto;
-    display: flex;
-    flex-direction: row;
+    /*display: flex;
+    flex-direction: row;*/
     background-color: transparent;
     border-color: transparent;
     text-align: center;
 }
-
-.footercard{
+.bluecard-sm {
+    text-align: center;
+    margin: 1% auto 1% auto;
+    background-color: #949ABF;
+    border-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+}
+.footercard {
     text-align: center;
     width: 66.25%;
     margin: 1% auto 1% auto;
@@ -133,17 +128,15 @@ body {
     border-color: transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
-    display: grid;
-    grid-template-columns: .5fr 1fr .5fr;
-    grid-template-rows: 1fr;
-    align-items: center;
 }
-.footercard h3{
-    color:#AF3B6E;
+
+.footercard h4 {
+    color: #AF3B6E;
 }
+
 .copyright {
     font-style: italic;
     width: 100%;
     text-align: center;
-    bottom:0;
+    bottom: 0;
 }
