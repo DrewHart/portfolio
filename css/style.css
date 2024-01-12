@@ -41,10 +41,9 @@ p {
     display: flex;
     flex-direction: row;
     background-color: #949ABF;
-    max-width: 66.25%;
-    margin: auto;
+    left: 16.875%;
+    right: 16.875%;
     top: 0px;
-
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 14px;
     z-index: 1;
@@ -114,6 +113,13 @@ body {
     border-color: transparent;
     text-align: center;
 }
+.inviscard-sm {
+    width: 66.25%;
+    margin: 1% auto 1% auto;
+    background-color: transparent;
+    border-color: transparent;
+    text-align: center;
+}
 .bluecard-sm {
     text-align: center;
     margin: 1% auto 1% auto;
@@ -144,14 +150,53 @@ body {
 }
 
 /*media queries*/
+
 @media screen and (max-width: 800px) {
+header {
+    flex-direction: column;
+    padding-top: 4px;
+}
+.navbar {
+    flex-direction: column;
+    align-items: center;
+    max-width: auto;
+    left: 0;
+    right: auto;
+    padding: 1%;
+    gap: 12px;
+}
+.navbuttons {
+    flex-direction: column;
+    gap: 4px;
+}
+body {
+    padding-left: 4px;
+    padding-top: 0;
+}
+.title {
+    margin: 1% auto 1% 84px;
+}
+.bluecard {
+    margin: 1% auto 1% 84px;
+}
+.inviscard {
+    margin: 1% auto 1% 84px;
+}
+
+.footercard {
+    margin: 1% auto 1% 84px;
+}
+
+}
+
+/*@media screen and (max-width: 800px) {
     header {
         flex-direction: column;
         max-width: 80px;
         width: 22%;
         height: 460px;
         max-height: 85%;
-        left: 0px;
+        left: 0;
         top: 2%;
         padding-top: 4px;
         padding-left:0px;
@@ -166,4 +211,10 @@ body {
         gap: 1%;
         flex-grow: 1;
     }
-}
+    .navlogo {
+        flex-direction: column;
+    }
+    .navbuttons {
+        flex-direction: column;
+    }
+}*/
